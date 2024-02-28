@@ -1,0 +1,184 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>21/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Feb 27 15:30:10 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>179 seconds (179581 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.Tc_002_homeLoanTest.write__table_headers()'><b>write__table_headers</b><br>Test class: TestCases.Tc_002_homeLoanTest</td>
+<td></td>
+<td>10</td>
+<td>TestCases.Tc_002_homeLoanTest@74e52303</td></tr>
+<tr>
+<td title='TestCases.Tc_002_homeLoanTest.verify_scroll_down()'><b>verify_scroll_down</b><br>Test class: TestCases.Tc_002_homeLoanTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Tc_002_homeLoanTest@74e52303</td></tr>
+<tr>
+<td title='TestCases.Tc_001_carLoanTest.verify_car_loan()'><b>verify_car_loan</b><br>Test class: TestCases.Tc_001_carLoanTest</td>
+<td></td>
+<td>3</td>
+<td>TestCases.Tc_001_carLoanTest@15ff3e9e</td></tr>
+<tr>
+<td title='TestCases.Tc_003_loanTest.verify_scale_ui_loantenure()'><b>verify_scale_ui_loantenure</b><br>Test class: TestCases.Tc_003_loanTest</td>
+<td></td>
+<td>3</td>
+<td>TestCases.Tc_003_loanTest@47af7f3d</td></tr>
+<tr>
+<td title='TestCases.Tc_001_carLoanTest.verify_click_emi_schemes()'><b>verify_click_emi_schemes</b><br>Test class: TestCases.Tc_001_carLoanTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Tc_001_carLoanTest@15ff3e9e</td></tr>
+<tr>
+<td title='TestCases.Tc_003_loanTest.verify_click_loanTenure()'><b>verify_click_loanTenure</b><br>Test class: TestCases.Tc_003_loanTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Tc_003_loanTest@47af7f3d</td></tr>
+<tr>
+<td title='TestCases.Tc_002_homeLoanTest.verify_home_loan()'><b>verify_home_loan</b><br>Test class: TestCases.Tc_002_homeLoanTest</td>
+<td></td>
+<td>2</td>
+<td>TestCases.Tc_002_homeLoanTest@74e52303</td></tr>
+<tr>
+<td title='TestCases.Tc_003_loanTest.verify_textbox_ui_loanamount()'><b>verify_textbox_ui_loanamount</b><br>Test class: TestCases.Tc_003_loanTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Tc_003_loanTest@47af7f3d</td></tr>
+<tr>
+<td title='TestCases.Tc_002_homeLoanTest.verify_click_homeLoan_calculator()'><b>verify_click_homeLoan_calculator</b><br>Test class: TestCases.Tc_002_homeLoanTest</td>
+<td></td>
+<td>31</td>
+<td>TestCases.Tc_002_homeLoanTest@74e52303</td></tr>
+<tr>
+<td title='TestCases.Tc_003_loanTest.verify_textbox_ui_loantenure()'><b>verify_textbox_ui_loantenure</b><br>Test class: TestCases.Tc_003_loanTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Tc_003_loanTest@47af7f3d</td></tr>
+<tr>
+<td title='TestCases.Tc_003_loanTest.verify_month_change_emi()'><b>verify_month_change_emi</b><br>Test class: TestCases.Tc_003_loanTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Tc_003_loanTest@47af7f3d</td></tr>
+<tr>
+<td title='TestCases.Tc_003_loanTest.verify_month_change_loanamount()'><b>verify_month_change_loanamount</b><br>Test class: TestCases.Tc_003_loanTest</td>
+<td></td>
+<td>1</td>
+<td>TestCases.Tc_003_loanTest@47af7f3d</td></tr>
+<tr>
+<td title='TestCases.Tc_001_carLoanTest.get_monthly_principal()'><b>get_monthly_principal</b><br>Test class: TestCases.Tc_001_carLoanTest</td>
+<td></td>
+<td>2</td>
+<td>TestCases.Tc_001_carLoanTest@15ff3e9e</td></tr>
+<tr>
+<td title='TestCases.Tc_003_loanTest.verify_click_menu()'><b>verify_click_menu</b><br>Test class: TestCases.Tc_003_loanTest</td>
+<td></td>
+<td>8</td>
+<td>TestCases.Tc_003_loanTest@47af7f3d</td></tr>
+<tr>
+<td title='TestCases.Tc_003_loanTest.verify_click_loanAmount()'><b>verify_click_loanAmount</b><br>Test class: TestCases.Tc_003_loanTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Tc_003_loanTest@47af7f3d</td></tr>
+<tr>
+<td title='TestCases.Tc_003_loanTest.verify_textbox_ui_emi()'><b>verify_textbox_ui_emi</b><br>Test class: TestCases.Tc_003_loanTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Tc_003_loanTest@47af7f3d</td></tr>
+<tr>
+<td title='TestCases.Tc_003_loanTest.verify_scale_ui_loanamount()'><b>verify_scale_ui_loanamount</b><br>Test class: TestCases.Tc_003_loanTest</td>
+<td></td>
+<td>3</td>
+<td>TestCases.Tc_003_loanTest@47af7f3d</td></tr>
+<tr>
+<td title='TestCases.Tc_001_carLoanTest.scroll_down()'><b>scroll_down</b><br>Test class: TestCases.Tc_001_carLoanTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Tc_001_carLoanTest@15ff3e9e</td></tr>
+<tr>
+<td title='TestCases.Tc_002_homeLoanTest.write_table_data()'><b>write_table_data</b><br>Test class: TestCases.Tc_002_homeLoanTest</td>
+<td></td>
+<td>5</td>
+<td>TestCases.Tc_002_homeLoanTest@74e52303</td></tr>
+<tr>
+<td title='TestCases.Tc_003_loanTest.verify_scale_ui_emi()'><b>verify_scale_ui_emi</b><br>Test class: TestCases.Tc_003_loanTest</td>
+<td></td>
+<td>3</td>
+<td>TestCases.Tc_003_loanTest@47af7f3d</td></tr>
+<tr>
+<td title='TestCases.Tc_001_carLoanTest.get_monthly_interest()'><b>get_monthly_interest</b><br>Test class: TestCases.Tc_001_carLoanTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Tc_001_carLoanTest@15ff3e9e</td></tr>
+</table><p>
+</body>
+</html>
