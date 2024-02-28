@@ -18,7 +18,7 @@ public class EmiStepDefination
 	public void user_is_navigating_to_emi_calculator_site() throws IOException 
 	{
 		BaseClass bc=new BaseClass();
-		bc.setUp("chrome");
+		bc.setUp("windows","chrome");
 	   
 	}
 

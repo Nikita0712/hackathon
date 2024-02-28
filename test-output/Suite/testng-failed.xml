@@ -5,30 +5,18 @@
     <listener class-name="Utilities.ExtentReportManager"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
+    <parameter name="os" value="windows"/>
     <parameter name="browser" value="Chrome"/>
     <classes>
       <class name="TestCases.Tc_002_homeLoanTest">
         <methods>
           <include name="verify_click_homeLoan_calculator"/>
-          <include name="write_table_data"/>
           <include name="setUp"/>
           <include name="verify_home_loan"/>
           <include name="verify_scroll_down"/>
-          <include name="write__table_headers"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- TestCases.Tc_002_homeLoanTest -->
-      <class name="TestCases.Tc_001_carLoanTest">
-        <methods>
-          <include name="scroll_down"/>
-          <include name="setUp"/>
-          <include name="get_monthly_principal"/>
-          <include name="verify_click_emi_schemes"/>
-          <include name="get_monthly_interest"/>
-          <include name="verify_car_loan"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- TestCases.Tc_001_carLoanTest -->
       <class name="TestCases.Tc_003_loanTest">
         <methods>
           <include name="verify_month_change_loanamount"/>
@@ -46,6 +34,17 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- TestCases.Tc_003_loanTest -->
+      <class name="TestCases.Tc_001_carLoanTest">
+        <methods>
+          <include name="scroll_down"/>
+          <include name="setUp"/>
+          <include name="get_monthly_principal"/>
+          <include name="verify_click_emi_schemes"/>
+          <include name="get_monthly_interest"/>
+          <include name="verify_car_loan"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.Tc_001_carLoanTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

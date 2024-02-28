@@ -15,12 +15,12 @@ public class CarLoanPage extends BasePage {
 	}
 	
 	//finding xpath of car loan button
-	@FindBy(xpath="//*[@id=\"car-loan\"]")
+	@FindBy(xpath="//*[@id='car-loan']")
 	WebElement car_loan_button;
 	
 	
 	//finding xpath of car loan amount
-	@FindBy(xpath="//*[@id=\"loanamount\"]")
+	@FindBy(xpath="//*[@id='loanamount']")
 	WebElement car_loan_amount;
 	
 	//finding xpath of car loan interest
